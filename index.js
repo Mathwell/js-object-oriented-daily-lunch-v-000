@@ -12,7 +12,7 @@ class Neighborhood{
     store.neighborhoods.push(this)
   }
   deliveries(){
-    return this.deliveries.filter(delivery => {
+    return store.deliveries.filter(delivery => {
       return delivery.neighborhoodId===this.id;
     })
   }
