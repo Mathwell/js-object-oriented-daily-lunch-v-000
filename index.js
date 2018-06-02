@@ -38,7 +38,9 @@ deliveries(){
 }
 
 customers(){
-  
+  return this.deliveries().map(delivery => {
+    return delivery.customer()
+  })
 }
 
 }
