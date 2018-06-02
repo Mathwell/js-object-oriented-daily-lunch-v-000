@@ -5,4 +5,5 @@ class Neighborhood{
   constructor(name){
     this.name=name;
   }
+  meal(){}
 }
