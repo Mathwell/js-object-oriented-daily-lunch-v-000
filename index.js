@@ -40,6 +40,11 @@ class Customer{
     this.neighborhoodId=neighborhood
     store.customers.push(this);
   }
+  deliveries(){
+    return store.deliveries.filter(delivery =>{
+      delivery.customerId=this.id;
+    })
+  }
 
 }
 
