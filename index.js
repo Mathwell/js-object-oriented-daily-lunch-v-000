@@ -78,7 +78,7 @@ class Delivery{
 
   customer(){
      return store.customers.find(customer => {
-       return customer === this.customerId;
+       return customer.id === this.customerId;
      });
    }
 
