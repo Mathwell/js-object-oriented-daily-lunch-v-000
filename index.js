@@ -50,6 +50,12 @@ customers(){
   })
 }
 
+mealByPrice(){
+  return store.meals.sort(function(a,b){
+    return a.price-b.price
+  })
+}
+
 }
 
 class Customer{
