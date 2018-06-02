@@ -58,6 +58,12 @@ class Delivery{
     store.deliveries.push(this)
   }
 
+  customer(){
+     return store.customers.find(customer => {
+       return customer.id === this.customerId;
+     });
+   }
+
   meal() {
      return store.meals.find(meal => {
        return meal.id === this.mealId;
