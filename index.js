@@ -16,9 +16,10 @@ class Meal{
 }
 
 class Customer{
-  constructor(name){
+  constructor(name,neighborhood){
     this.name=name;
     this.id=customerId++;
+    this.neighborhoodId=neighborhood.id
     store.customers.push(this);
   }
 }
