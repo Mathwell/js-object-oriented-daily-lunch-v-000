@@ -65,7 +65,7 @@ class Delivery{
   }
 
   customer(){
-     return store.customers.find(customer => {
+     return store.customers.filter(customer => {
        return customer.id === this.customerId;
      });
    }
