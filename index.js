@@ -12,7 +12,7 @@ class Neighborhood{
     store.neighborhoods.push(this)
   }
   deliveries(){
-    return this.customers().map(customer => {
+    return this.customers.map(customer => {
       return customer.deliveries();
     })
   }
