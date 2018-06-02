@@ -10,3 +10,5 @@ class Neighborhood{
 class Meal{
 
 }
+
+class Customer{}
