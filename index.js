@@ -64,7 +64,6 @@ class Delivery{
      });
   }
 
-
   customer() {
      return store.customers.find(customer => {
        return customer.id === this.customerId;
@@ -76,5 +75,4 @@ class Delivery{
        return neighborhood.id===this.neighborhoodId
      })
    }
-
 }
