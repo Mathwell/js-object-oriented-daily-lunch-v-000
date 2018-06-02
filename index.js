@@ -12,9 +12,9 @@ class Neighborhood{
     store.neighborhoods.push(this)
   }
   deliveries(){
-    return [].concat.apply([],this.customers().map(customer=>{
+    return this.customers().map(customer=>{
       return customer.deliveries();
-    }))
+    })
   }
   customers(){
     return store.customers.filter(customer=>{
