@@ -32,8 +32,8 @@ constructor(title,price){
 }
 
 deliveries(){
-  return store.deliveries.find(delivery =>{
-    return delivery.mealId=this.id
+  return store.deliveries.filter(delivery =>{
+    return delivery.mealId===this.id
   })
 }
 
