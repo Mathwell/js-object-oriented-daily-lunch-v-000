@@ -31,6 +31,16 @@ constructor(title,price){
   store.meals.push(this)
 }
 
+deliveries(){
+  return store.deliveries.find(delivery =>{
+    return delivery.mealId=this.id
+  })
+}
+
+customers(){
+  
+}
+
 }
 
 class Customer{
