@@ -68,7 +68,7 @@ class Customer{
 }
 
 class Delivery{
-  constructor(meal,customer,neighborhood){
+  constructor(meal,neighborhood, customer){
     this.mealId=meal;
     this.customerId=customer
     this.neighborhoodId=neighborhood
@@ -78,7 +78,7 @@ class Delivery{
 
   customer(){
      return store.customers.find(customer => {
-       return customer.id == this.customerId;
+       return customer.id === this.customerId;
      });
    }
 
