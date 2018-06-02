@@ -12,6 +12,9 @@ class Neighborhood{
 }
 
 class Meal{
+constructor(title){
+  this.title=title;
+}
 
 }
 
@@ -22,6 +25,7 @@ class Customer{
     this.neighborhoodId=neighborhood.id
     store.customers.push(this);
   }
+
 }
 
 class Delivery{
