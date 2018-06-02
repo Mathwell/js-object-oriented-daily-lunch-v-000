@@ -64,7 +64,7 @@ class Delivery{
      });
   }
 
-  customer() {
+  customer(){
      return store.customers.find(customer => {
        return customer.id === this.customerId;
      });
