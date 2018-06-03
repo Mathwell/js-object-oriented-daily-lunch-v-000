@@ -79,7 +79,7 @@ class Customer{
   }
 
   totalSpent(){
-    return this.meals().reduce(function(sum,value){return sum+value},0)
+    return this.meals().reduce(function(sum,value){return sum+value.price})
   }
 
 }
